@@ -12,9 +12,10 @@ import {
   MatCardModule
 } from "@angular/material";
 import { MenuComponent } from './menu/menu.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent, MainComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
