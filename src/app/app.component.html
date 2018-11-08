@@ -1,5 +1,8 @@
-<div fxLayout="row" fxLayoutAlign="space-between" fxFlexOffset="1" fxLayoutGap="1px" fxFill>
-  <app-menu fxFlex="300px"></app-menu>
-  <mat-divider></mat-divider>
-  <app-main fxFill></app-main>
+<div fxLayout="row" fxFlexOffset="1" fxLayoutGap="2px">
+  <mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+      <app-menu fxFlex="300px"></app-menu>
+    </mat-sidenav>
+  </mat-sidenav-container>
+  <app-main fxFlex="900px"></app-main>
 </div>

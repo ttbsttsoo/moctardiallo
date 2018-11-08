@@ -9,13 +9,21 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import {
   MatButtonModule,
   MatDividerModule,
-  MatCardModule
+  MatCardModule,
+  MatGridListModule,
+  MatSidenavModule
 } from "@angular/material";
-import { MenuComponent } from './menu/menu.component';
-import { MainComponent } from './main/main.component';
+import { MenuComponent } from "./menu/menu.component";
+import { MainComponent } from "./main/main.component";
+import { ServicesSectionComponent } from "./services-section/services-section.component";
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, MainComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    MainComponent,
+    ServicesSectionComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,7 +31,9 @@ import { MainComponent } from './main/main.component';
     FlexLayoutModule,
     MatButtonModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
