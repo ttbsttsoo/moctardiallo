@@ -1,28 +1,5 @@
 <mat-grid-list cols="3" rowHeight="300px" gutterSize="10px">
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[0]">
-    <p>FrontEnd</p>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[1]">
-    <p>Backend</p>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[0]">
-    <p>Python</p>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[1]">
-    <p>AI</p>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[0]">
-    <p>Machine Learning</p>
-  </mat-grid-tile>
-  <mat-grid-tile [colspan]="1" [rowspan]=1 [style.background]="colors[1]">
-    <p>Deep Learning</p>
+  <mat-grid-tile *ngFor="let s of [1, 2, 3, 4, 5, 6]" [colspan]="1" [rowspan]=1 [style.background]="colors[1]">
+    <app-service></app-service>
   </mat-grid-tile>
 </mat-grid-list>
-<!-- <div fxFlex="900px" fxLayout="row-wrap" fxLayoutAlign="space-around center" fxLayoutGap="0px">
-  <div fxFlex="300px">FrontEnd</div>
-  <div fxFlex="300px">Backend</div>
-  <div fxFlex="300px">Python</div>
-  <div fxFlex="300px">AI</div>
-  <div fxFlex="300px">Machine Learning</div>
-  <div fxFlex="300px">Deep Learning</div>
-</div> -->

@@ -16,13 +16,15 @@ import {
 import { MenuComponent } from "./menu/menu.component";
 import { MainComponent } from "./main/main.component";
 import { ServicesSectionComponent } from "./services-section/services-section.component";
+import { ServiceComponent } from './services-section/service/service.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     MainComponent,
-    ServicesSectionComponent
+    ServicesSectionComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule,
