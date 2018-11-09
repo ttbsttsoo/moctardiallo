@@ -1,7 +1,11 @@
-<p>My Work</p>
-<p><b>RECENT WORK</b></p>
+<p>{{title}}</p>
+<p><b>{{subtitle}}</b></p>
 <mat-grid-list cols="3">
-  <mat-grid-tile *ngFor="let work of [1, 2, 3]" colspan="1">
-    <app-work></app-work>
+  <mat-grid-tile *ngFor="let app of apps" colspan="1">
+    <app-work [name] = "app.name"
+      [domain] = "app.domain"
+      [logo] = "app.logo"
+      [views] = "app.views" [likes] = "app.likes"
+      [shares] = "app.shares"></app-work>
   </mat-grid-tile>
 </mat-grid-list>
