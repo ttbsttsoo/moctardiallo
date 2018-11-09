@@ -1,7 +1,9 @@
 <p>What I Do ?</p>
 <h3>Here are some of my expertise</h3>
 <mat-grid-list cols="3" rowHeight="300px" gutterSize="20px">
-  <mat-grid-tile fxFlexLayout="row-wrap" fxFlexLayoutAlign="space-around" *ngFor="let s of [1, 2, 3, 4, 5, 6]" [colspan]="1" [rowspan]=1>
-    <app-service></app-service>
+  <mat-grid-tile fxFlexLayout="row-wrap" fxFlexLayoutAlign="space-around" *ngFor="let service of services" [colspan]="1" [rowspan]=1>
+    <app-service [title]="service.title"
+        [image]="service.image" [content]="service.content">
+    </app-service>
   </mat-grid-tile>
 </mat-grid-list>

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { ColorsService } from "src/app/colors.service";
 
 @Component({
@@ -7,14 +7,16 @@ import { ColorsService } from "src/app/colors.service";
   styleUrls: ["./service.component.css"]
 })
 export class ServiceComponent implements OnInit {
-  title = "FrontEnd Development";
-  content = `Lorem ipsum dolor sit amet consectetur 
-  adipisicing elit. Animi, illum autem! Maiores quasi 
-  `;
+  @Input()
+  title: string;
+
+  @Input()
+  content:string;
 
   colors: string[];
 
-  image = "../assets/img/frontend.jpeg";
+  @Input()
+  image:string;
 
   constructor(private colorsService: ColorsService) {}
 
