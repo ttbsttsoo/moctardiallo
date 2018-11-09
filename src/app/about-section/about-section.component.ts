@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutSectionComponent implements OnInit {
 
+  topics = [
+    "FrontEnd",
+    "BackEnd",
+    "AI",
+    "Soft Eng"
+  ]
   constructor() { }
 
   ngOnInit() {
