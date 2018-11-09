@@ -13,7 +13,10 @@ import {
   MatCardModule,
   MatGridListModule,
   MatSidenavModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatSliderModule,
+  MatFormFieldModule,
+  MatInputModule
 } from "@angular/material";
 import { MenuComponent } from "./menu/menu.component";
 import { MainComponent } from "./main/main.component";
@@ -23,6 +26,11 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { SkillComponent } from './skills-section/skill/skill.component';
 import { WorkSectionComponent } from './work-section/work-section.component';
 import { WorkComponent } from './work-section/work/work.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { ContactFormComponent } from './contact-section/contact-form/contact-form.component';
+import { VoidSectionComponent } from './void-section/void-section.component';
+import { HomeSectionComponent } from './home-section/home-section.component';
+import { AboutSectionComponent } from './about-section/about-section.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +42,12 @@ import { WorkComponent } from './work-section/work/work.component';
     SkillsSectionComponent,
     SkillComponent,
     WorkSectionComponent,
-    WorkComponent
+    WorkComponent,
+    ContactSectionComponent,
+    ContactFormComponent,
+    VoidSectionComponent,
+    HomeSectionComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +59,10 @@ import { WorkComponent } from './work-section/work/work.component';
     MatCardModule,
     MatGridListModule,
     MatSidenavModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
