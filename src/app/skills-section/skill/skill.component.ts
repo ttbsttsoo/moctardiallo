@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skill',
@@ -8,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class SkillComponent implements OnInit {
 color = 'primary';
   mode = 'determinate';
-  value = 50;
   bufferValue = 75;
+
+  @Input()
+  skill: string;
+
+  @Input()
+  value: number;
+
   constructor() { }
 
   ngOnInit() {
