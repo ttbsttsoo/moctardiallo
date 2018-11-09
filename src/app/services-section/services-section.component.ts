@@ -8,6 +8,8 @@ import { ColorsService } from "../colors.service";
 })
 export class ServicesSectionComponent implements OnInit {
   colors: string[];
+  title = "What I Do ?";
+  subtitle = "Here are some of my expertise";
   services = [
     {
       title: "FrontEnd Development",
