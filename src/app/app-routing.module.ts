@@ -30,7 +30,7 @@ const routes: Routes = [
     component: SkillsSectionComponent
   },
   {
-    path: "work",
+    path: "apps",
     component: WorkSectionComponent
   },
   {
