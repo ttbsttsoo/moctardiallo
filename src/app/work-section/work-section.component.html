@@ -1,11 +1,16 @@
-<p>{{title}}</p>
-<p><b>{{subtitle}}</b></p>
-<mat-grid-list cols="3">
+<p>{{ title }}</p>
+<p>
+  <b>{{ subtitle }}</b>
+</p>
+<mat-grid-list [cols]="apps.length">
   <mat-grid-tile *ngFor="let app of apps" colspan="1">
-    <app-work [name] = "app.name"
-      [domain] = "app.domain"
-      [logo] = "app.logo"
-      [views] = "app.views" [likes] = "app.likes"
-      [shares] = "app.shares"></app-work>
+    <app-work
+      [name]="app.name"
+      [domain]="app.domain"
+      [logo]="app.logo"
+      [views]="app.views"
+      [likes]="app.likes"
+      [shares]="app.shares"
+    ></app-work>
   </mat-grid-tile>
 </mat-grid-list>
