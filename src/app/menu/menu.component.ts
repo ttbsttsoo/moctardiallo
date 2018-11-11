@@ -1,4 +1,7 @@
+import { MenuService } from "./menu.service";
 import { Component, OnInit } from "@angular/core";
+import { MENU } from "./mock-menu";
+import { MenuItem } from "./menu";
 
 @Component({
   selector: "app-menu",
@@ -11,34 +14,13 @@ export class MenuComponent implements OnInit {
   title = "Moctar Diallo";
   subtitle = "Software Engineer";
 
-  items = [
-    {
-      name: "HOME",
-      link: ""
-    },
-    {
-      name: "ABOUT ME",
-      link: "about"
-    },
-    {
-      name: "MY SERVICES",
-      link: "services"
-    },
-    {
-      name: "MY SKILLS",
-      link: "skills"
-    },
-    {
-      name: "MY WORK",
-      link: "apps"
-    },
-    {
-      name: "CONTACT ME",
-      link: "contact"
-    }
-  ];
+  items: MenuItem[];
 
-  constructor() {}
+  constructor(private menuService: MenuService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.menuService
+      .getMenuItems()
+      .subscribe(menuItems => (this.items = menuItems));
+  }
 }
