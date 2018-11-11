@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ColorsService } from "../colors.service";
+import { Service } from "./service";
+import { ServicesSectionService } from "./services-section.service";
 
 @Component({
   selector: "app-services-section",
@@ -10,53 +12,20 @@ export class ServicesSectionComponent implements OnInit {
   colors: string[];
   title = "What I Do ?";
   subtitle = "Here are some of my expertise";
-  services = [
-    {
-      title: "FrontEnd Development",
-      image: "assets/img/frontend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    },
-  {
-      title: "Backend Development",
-      image: "assets/img/backend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    },
-{
-      title: "Python Development",
-      image: "assets/img/frontend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    },
-{
-      title: "AI",
-      image: "assets/img/frontend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    },
-{
-      title: "Machine Learning",
-      image: "assets/img/frontend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    },
-{
-      title: "Deep Learning",
-      image: "assets/img/frontend.jpeg",
-      content: `Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Animi, illum autem! Maiores quasi 
-                `
-    }
-  ]
-  constructor(private colorsService: ColorsService) {}
+  services: Service[];
+  constructor(
+    private colorsService: ColorsService,
+    private servicesService: ServicesSectionService
+  ) {}
 
   ngOnInit() {
     this.colorsService.getColors().subscribe(colors => (this.colors = colors));
+    this.getServices();
+  }
+
+  getServices(): void {
+    this.servicesService
+      .getServices()
+      .subscribe(services => (this.services = services));
   }
 }
