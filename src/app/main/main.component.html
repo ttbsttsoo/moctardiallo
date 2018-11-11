@@ -1,9 +1,15 @@
 <div fxLayout="column" fxLayoutAlign="space-around" fxLayoutGap="100px">
-  <app-home-section></app-home-section>
-  <app-about-section></app-about-section>
-  <app-services-section></app-services-section>
-  <app-skills-section></app-skills-section>
-  <app-work-section></app-work-section>
-  <app-contact-section></app-contact-section>
-  <app-void-section *ngFor="let void of [1, 2]"></app-void-section>
+  <!--
+    <app-home-section></app-home-section>
+    <app-about-section></app-about-section>
+  -->
+  <!-- <app-services-section id="services"></app-services-section> -->
+  <router-outlet></router-outlet>
+
+  <!--
+    <app-skills-section></app-skills-section>
+    <app-work-section></app-work-section>
+    <app-contact-section></app-contact-section>
+    <app-void-section *ngFor="let void of [1, 2]"></app-void-section>
+  -->
 </div>

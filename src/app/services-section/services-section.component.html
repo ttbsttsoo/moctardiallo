@@ -1,9 +1,18 @@
-<p>{{title}}</p>
-<h3>{{subtitle}}</h3>
+<p>{{ title }}</p>
+<h3>{{ subtitle }}</h3>
 <mat-grid-list cols="3" rowHeight="300px" gutterSize="20px">
-  <mat-grid-tile fxFlexLayout="row-wrap" fxFlexLayoutAlign="space-around" *ngFor="let service of services" [colspan]="1" [rowspan]=1>
-    <app-service [title]="service.title"
-        [image]="service.image" [content]="service.content">
+  <mat-grid-tile
+    fxFlexLayout="row-wrap"
+    fxFlexLayoutAlign="space-around"
+    *ngFor="let service of services"
+    [colspan]="1"
+    [rowspan]="1"
+  >
+    <app-service
+      [title]="service.title"
+      [image]="service.image"
+      [content]="service.content"
+    >
     </app-service>
   </mat-grid-tile>
 </mat-grid-list>
