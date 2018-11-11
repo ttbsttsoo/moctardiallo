@@ -3,7 +3,7 @@
   {{ subtitle }}<br />
 </p>
 <p>{{ text }}</p>
-<mat-grid-list cols="4">
+<mat-grid-list [cols]="topics.length">
   <mat-grid-tile colspan="1" *ngFor="let topic of topics">
     <mat-card
       fxFlex="200px"
