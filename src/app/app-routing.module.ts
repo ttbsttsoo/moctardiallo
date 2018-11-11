@@ -14,6 +14,10 @@ const routes: Routes = [
     component: HomeSectionComponent
   },
   {
+    path: "home",
+    component: HomeSectionComponent
+  },
+  {
     path: "about",
     component: AboutSectionComponent
   },
