@@ -1,11 +1,11 @@
 export const TOPICS = [
   {
-    title: "FrontEnd"
+    title: "FrontEnd Developer"
   },
   {
-    title: "BackEnd"
+    title: "BackEnd Developer"
   },
   {
-    title: "Deep Learning"
+    title: "Deep Learning Engineer"
   }
 ];
