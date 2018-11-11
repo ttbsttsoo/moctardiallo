@@ -8,6 +8,9 @@ import { Component, OnInit } from "@angular/core";
 export class MenuComponent implements OnInit {
   colors = ["lightblue", "lightpink"];
 
+  title = "Moctar Diallo";
+  subtitle = "Software Engineer";
+
   items = [
     {
       name: "HOME",
