@@ -1,13 +1,23 @@
-<p>Get In Touch</p>
-<p><b>CONTACT</b></p>
+<p>{{ title }}</p>
+<p>
+  <b>{{ subtitle }}</b>
+</p>
 <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="50px">
-  <div fxFlex="300px" fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
-      <mat-card-header *ngFor="let address of contact.addresses" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
-      <img src="assets/img/frontbackend.png" mat-card-sm-image>
-      <a href="#">{{address}}</a>
-      </mat-card-header>
-  </div >
-    <div fxFlex="400px">
-    <app-contact-form></app-contact-form>
-    </div>
+  <div
+    fxFlex="300px"
+    fxLayout="column"
+    fxLayoutAlign="space-around center"
+    fxLayoutGap="20px"
+  >
+    <mat-card-header
+      *ngFor="let address of contact.addresses"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+    >
+      <img src="assets/img/frontbackend.png" mat-card-sm-image />
+      <a href="#">{{ address }}</a>
+    </mat-card-header>
+  </div>
+  <div fxFlex="400px"><app-contact-form></app-contact-form></div>
 </div>
