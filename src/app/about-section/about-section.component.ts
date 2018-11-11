@@ -11,7 +11,20 @@ export class AboutSectionComponent implements OnInit {
   text = `
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis doloremque ad incidunt sunt dicta facilis tempore neque minima! Nihil perferendis aut saepe amet? Reprehenderit quod ratione adipisci a dolore.
   `;
-  topics = ["FrontEnd", "BackEnd", "AI", "Soft Eng"];
+  topics = [
+    {
+      title: "FrontEnd"
+    },
+    {
+      title: "BackEnd"
+    },
+    {
+      title: "AI"
+    },
+    {
+      title: "Soft Eng"
+    }
+  ];
   constructor() {}
 
   ngOnInit() {}
