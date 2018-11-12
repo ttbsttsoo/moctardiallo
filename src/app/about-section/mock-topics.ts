@@ -4,5 +4,8 @@ export const TOPICS = [
   },
   {
     title: "Deep Learning Engineer"
+  },
+  {
+    title: "Python Developer"
   }
 ];
