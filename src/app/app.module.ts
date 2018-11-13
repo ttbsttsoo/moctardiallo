@@ -1,6 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -21,16 +20,17 @@ import {
 import { MenuComponent } from "./menu/menu.component";
 import { MainComponent } from "./main/main.component";
 import { ServicesSectionComponent } from "./services-section/services-section.component";
-import { ServiceComponent } from './services-section/service/service.component';
-import { SkillsSectionComponent } from './skills-section/skills-section.component';
-import { SkillComponent } from './skills-section/skill/skill.component';
-import { WorkSectionComponent } from './work-section/work-section.component';
-import { WorkComponent } from './work-section/work/work.component';
-import { ContactSectionComponent } from './contact-section/contact-section.component';
-import { ContactFormComponent } from './contact-section/contact-form/contact-form.component';
-import { VoidSectionComponent } from './void-section/void-section.component';
-import { HomeSectionComponent } from './home-section/home-section.component';
-import { AboutSectionComponent } from './about-section/about-section.component';
+import { ServiceComponent } from "./services-section/service/service.component";
+import { SkillsSectionComponent } from "./skills-section/skills-section.component";
+import { SkillComponent } from "./skills-section/skill/skill.component";
+import { WorkSectionComponent } from "./work-section/work-section.component";
+import { WorkComponent } from "./work-section/work/work.component";
+import { ContactSectionComponent } from "./contact-section/contact-section.component";
+import { ContactFormComponent } from "./contact-section/contact-form/contact-form.component";
+import { VoidSectionComponent } from "./void-section/void-section.component";
+import { HomeSectionComponent } from "./home-section/home-section.component";
+import { AboutSectionComponent } from "./about-section/about-section.component";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -53,6 +53,7 @@ import { AboutSectionComponent } from './about-section/about-section.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     FlexLayoutModule,
     MatButtonModule,
     MatDividerModule,
