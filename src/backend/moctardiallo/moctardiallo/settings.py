@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'services',
     'skills',
-    'mywork'
+    'mywork',
+    'menu'
 ]
 
 MIDDLEWARE = [
