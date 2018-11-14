@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ColorsService } from "../colors.service";
 import { Service } from "./service";
 import { ServicesSectionService } from "./services-section.service";
+import { ImageService } from "./../image.service"
 
 @Component({
   selector: "app-services-section",
@@ -15,7 +16,8 @@ export class ServicesSectionComponent implements OnInit {
   services: Service[];
   constructor(
     private colorsService: ColorsService,
-    private servicesService: ServicesSectionService
+    private servicesService: ServicesSectionService,
+    private imageService: ImageService,
   ) {}
 
   ngOnInit() {
@@ -27,5 +29,6 @@ export class ServicesSectionComponent implements OnInit {
     this.servicesService
       .getServices()
       .subscribe(services => (this.services = services));
+    // this.imageService.getImage().subscribe(image => this.services[0].image = image)
   }
 }
