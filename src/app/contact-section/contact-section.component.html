@@ -9,15 +9,10 @@
     fxLayoutAlign="space-around center"
     fxLayoutGap="20px"
   >
-    <mat-card-header
-      *ngFor="let address of contact.addresses"
-      fxLayout="row"
-      fxLayoutAlign="center center"
-      fxLayoutGap="10px"
-    >
-      <img src="assets/img/frontbackend.png" mat-card-sm-image />
-      <a href="#">{{ address }}</a>
-    </mat-card-header>
+      <app-contact-item [value]="contact.email"
+        [image]="image_email"></app-contact-item>
+      <app-contact-item [value]="contact.tel"
+        [image]="image_tel"></app-contact-item>
   </div>
   <div fxFlex="400px"><app-contact-form></app-contact-form></div>
 </div>

@@ -31,6 +31,7 @@ import { VoidSectionComponent } from "./void-section/void-section.component";
 import { HomeSectionComponent } from "./home-section/home-section.component";
 import { AboutSectionComponent } from "./about-section/about-section.component";
 import { HttpClientModule } from "@angular/common/http";
+import { ContactItemComponent } from './contact-section/contact-item/contact-item.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { HttpClientModule } from "@angular/common/http";
     ContactFormComponent,
     VoidSectionComponent,
     HomeSectionComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    ContactItemComponent
   ],
   imports: [
     BrowserModule,

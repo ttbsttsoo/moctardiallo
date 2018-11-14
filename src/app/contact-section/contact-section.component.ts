@@ -12,7 +12,8 @@ export class ContactSectionComponent implements OnInit {
   title = "Get In Touch";
   subtitle = "CONTACT";
   contact: Contact;
-
+  image_tel = "assets/img/backend.jpeg"
+  image_email = "assets/img/frontbackend.png"
   constructor(private contactService: ContactService) {}
 
   ngOnInit() {
